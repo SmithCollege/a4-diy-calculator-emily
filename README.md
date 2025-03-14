@@ -8,9 +8,9 @@ Group Member Name(s):
 
 Other collaborators you worked with, including TAs (and feel free to give a shoutout to anyone who was particularly helpful):
 
-Any references used besides JavaDoc and course materials:
+Any references used besides JavaDoc and course materials: https://www.geeksforgeeks.org/operators-in-java/, https://en.wikipedia.org/wiki/Operator_associativity#A_detailed_example 
 
-Reflection on your experience with this assignment:
+Reflection on your experience with this assignment: This assignment allowed me to understand more about the use of queues and stacks, as well as how they can work with each other. For me, writitng the code for the infix class was much easier than the postfix class as it was more detailed in the step by step process. I also learned more about the the right and left associativity which I had not known about before. 
 
 This assignment does lend itself to more visual prototyping, so please feel free to go this route. Are you including slides, pseudocode, comments, or something else?
 
