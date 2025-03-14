@@ -18,7 +18,7 @@ public class Postfix {
                 stack.push(token);
             }else if(token instanceof Character){
                 if (stack.size()<2) {
-                    throw new IllegalArgumentException("Not enough");
+                    throw new IllegalArgumentException("Not enough operands");
                 }else{
                     //pop two numbers off the stack
                     x1 = (Double) stack.pop();  

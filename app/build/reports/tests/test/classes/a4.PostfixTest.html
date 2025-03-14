@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">7</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">36.404s</div>
+<div class="counter">0.023s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">0%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,247 +61,10 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
-</li>
-<li>
-<a href="#tab1">Tests</a>
+<a href="#tab0">Tests</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="testPostfixCombo"></a>
-<h3 class="failures">testPostfixCombo</h3>
-<span class="code">
-<pre>java.lang.OutOfMemoryError: Java heap space
-	at java.base/java.util.Arrays.copyOf(Unknown Source)
-	at java.base/java.util.ArrayDeque.grow(Unknown Source)
-	at java.base/java.util.ArrayDeque.addFirst(Unknown Source)
-	at java.base/java.util.ArrayDeque.push(Unknown Source)
-	at a4.Postfix.postfix(Postfix.java:18)
-	at a4.PostfixTest.testPostfixCombo(PostfixTest.java:73)
-	at java.base/java.lang.invoke.LambdaForm$DMH/0x0000751a9c0a8000.invokeVirtual(LambdaForm$DMH)
-	at java.base/java.lang.invoke.LambdaForm$MH/0x0000751a9c084000.invoke(LambdaForm$MH)
-	at java.base/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(Unknown Source)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
-	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="testPostfixDiv"></a>
-<h3 class="failures">testPostfixDiv</h3>
-<span class="code">
-<pre>java.lang.OutOfMemoryError: Java heap space
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="testPostfixMinus"></a>
-<h3 class="failures">testPostfixMinus</h3>
-<span class="code">
-<pre>java.lang.OutOfMemoryError: Java heap space
-	at java.base/java.util.Arrays.copyOf(Unknown Source)
-	at java.base/java.util.ArrayDeque.grow(Unknown Source)
-	at java.base/java.util.ArrayDeque.addFirst(Unknown Source)
-	at java.base/java.util.ArrayDeque.push(Unknown Source)
-	at a4.Postfix.postfix(Postfix.java:18)
-	at a4.PostfixTest.testPostfixMinus(PostfixTest.java:40)
-	at java.base/java.lang.invoke.LambdaForm$DMH/0x0000751a9c0a8000.invokeVirtual(LambdaForm$DMH)
-	at java.base/java.lang.invoke.LambdaForm$MH/0x0000751a9c025c00.invoke(LambdaForm$MH)
-	at java.base/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(Unknown Source)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
-	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="testPostfixPlus"></a>
-<h3 class="failures">testPostfixPlus</h3>
-<span class="code">
-<pre>java.lang.OutOfMemoryError: Java heap space
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="testPostfixSingle"></a>
-<h3 class="failures">testPostfixSingle</h3>
-<span class="code">
-<pre>java.lang.OutOfMemoryError: Java heap space
-	at java.base/java.util.Arrays.copyOf(Unknown Source)
-	at java.base/java.util.ArrayDeque.grow(Unknown Source)
-	at java.base/java.util.ArrayDeque.addFirst(Unknown Source)
-	at java.base/java.util.ArrayDeque.push(Unknown Source)
-	at a4.Postfix.postfix(Postfix.java:18)
-	at a4.PostfixTest.testPostfixSingle(PostfixTest.java:18)
-	at java.base/java.lang.invoke.LambdaForm$DMH/0x0000751a9c0a8000.invokeVirtual(LambdaForm$DMH)
-	at java.base/java.lang.invoke.LambdaForm$MH/0x0000751a9c090800.invoke(LambdaForm$MH)
-	at java.base/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(Unknown Source)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
-	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="testPostfixThrowsException"></a>
-<h3 class="failures">testPostfixThrowsException</h3>
-<span class="code">
-<pre>java.lang.Exception: Unexpected exception, expected&lt;java.lang.IllegalArgumentException&gt; but was&lt;java.util.NoSuchElementException&gt;
-	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:30)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
-	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at jdk.proxy1/jdk.proxy1.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-Caused by: java.util.NoSuchElementException
-	at java.base/java.util.ArrayDeque.removeFirst(Unknown Source)
-	at java.base/java.util.ArrayDeque.pop(Unknown Source)
-	at a4.Postfix.postfix(Postfix.java:24)
-	at a4.PostfixTest.testPostfixThrowsException(PostfixTest.java:84)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
-	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
-	... 33 more
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="testPostfixTimes"></a>
-<h3 class="failures">testPostfixTimes</h3>
-<span class="code">
-<pre>java.lang.OutOfMemoryError: Java heap space
-	at java.base/java.util.Arrays.copyOf(Unknown Source)
-	at java.base/java.util.ArrayDeque.grow(Unknown Source)
-	at java.base/java.util.ArrayDeque.addFirst(Unknown Source)
-	at java.base/java.util.ArrayDeque.push(Unknown Source)
-	at a4.Postfix.postfix(Postfix.java:18)
-	at a4.PostfixTest.testPostfixTimes(PostfixTest.java:51)
-	at java.base/java.lang.invoke.LambdaForm$DMH/0x0000751a9c0a8000.invokeVirtual(LambdaForm$DMH)
-	at java.base/java.lang.invoke.LambdaForm$MH/0x0000751a9c0a8400.invoke(LambdaForm$MH)
-	at java.base/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(Unknown Source)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
-	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -312,39 +75,39 @@ Caused by: java.util.NoSuchElementException
 </tr>
 </thead>
 <tr>
-<td class="failures">testPostfixCombo</td>
-<td class="failures">5.832s</td>
-<td class="failures">failed</td>
+<td class="success">testPostfixCombo</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">testPostfixDiv</td>
-<td class="failures">5.942s</td>
-<td class="failures">failed</td>
+<td class="success">testPostfixDiv</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">testPostfixMinus</td>
-<td class="failures">6.946s</td>
-<td class="failures">failed</td>
+<td class="success">testPostfixMinus</td>
+<td class="success">0.007s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">testPostfixPlus</td>
-<td class="failures">5.014s</td>
-<td class="failures">failed</td>
+<td class="success">testPostfixPlus</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">testPostfixSingle</td>
-<td class="failures">6.171s</td>
-<td class="failures">failed</td>
+<td class="success">testPostfixSingle</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">testPostfixThrowsException</td>
-<td class="failures">0.010s</td>
-<td class="failures">failed</td>
+<td class="success">testPostfixThrowsException</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">testPostfixTimes</td>
-<td class="failures">6.489s</td>
-<td class="failures">failed</td>
+<td class="success">testPostfixTimes</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
 </tr>
 </table>
 </div>
@@ -356,7 +119,7 @@ Caused by: java.util.NoSuchElementException
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.3</a> at Mar 13, 2025, 3:28:14 PM</p>
+<a href="http://www.gradle.org">Gradle 7.3</a> at Mar 14, 2025, 4:19:38 AM</p>
 </div>
 </div>
 </body>
