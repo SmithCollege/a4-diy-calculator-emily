@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="a4.PostfixTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-03-14T04:19:38" hostname="codespaces-5bd1ad" time="0.025">
+<testsuite name="a4.PostfixTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-03-14T14:27:02" hostname="codespaces-5bd1ad" time="0.021">
   <properties/>
   <testcase name="testPostfixSingle" classname="a4.PostfixTest" time="0.002"/>
-  <testcase name="testPostfixCombo" classname="a4.PostfixTest" time="0.002"/>
-  <testcase name="testPostfixMinus" classname="a4.PostfixTest" time="0.007"/>
-  <testcase name="testPostfixTimes" classname="a4.PostfixTest" time="0.002"/>
-  <testcase name="testPostfixThrowsException" classname="a4.PostfixTest" time="0.003"/>
-  <testcase name="testPostfixDiv" classname="a4.PostfixTest" time="0.002"/>
+  <testcase name="testPostfixCombo" classname="a4.PostfixTest" time="0.003"/>
+  <testcase name="testPostfixMinus" classname="a4.PostfixTest" time="0.004"/>
+  <testcase name="testPostfixTimes" classname="a4.PostfixTest" time="0.003"/>
+  <testcase name="testPostfixThrowsException" classname="a4.PostfixTest" time="0.001"/>
+  <testcase name="testPostfixDiv" classname="a4.PostfixTest" time="0.003"/>
   <testcase name="testPostfixPlus" classname="a4.PostfixTest" time="0.005"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

@@ -11,10 +11,14 @@ public class Infix {
             case '*':
             case '/':
                 return 2;
+            case '^':
+                return 3;
             default:
                 return 0;
         }
     }
+
+
 
     public static Double infixToPostfix(ArrayDeque<Object> tokens) {
         ArrayDeque<Object> stack = new ArrayDeque<>();
@@ -42,9 +46,11 @@ public class Infix {
                         stack.pop();
                     }
                 }else{
-                    while (stack.peek() instanceof Character){
-                        if(getPrecedence((Character) stack.peek()) >= getPrecedence((Character) parsedToken)) {
-                        queue.add(stack.pop());
+                    while (!stack.isEmpty()){
+                        if (getPrecedence((Character) stack.peek()) > getPrecedence((Character) parsedToken) || 
+                            (getPrecedence((Character) stack.peek()) == getPrecedence((Character) parsedToken) && (Character) stack.peek() != '^') 
+                            && (Character) stack.peek() != '(') {
+                            queue.add(stack.pop());
                         }else{
                             break;
                         }
