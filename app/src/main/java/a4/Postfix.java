@@ -1,10 +1,18 @@
 package a4;
 
 import java.util.ArrayDeque;
-
+/*
+ * This class reads a postfix expression and is able to compute the result of a given expression
+ * For example: 
+ *          Input: "3 2 + 5 *"
+ *	        Answer: 25
+ */
 public class Postfix {
 
-    // @param token: list of tokens 
+    /* 
+     * @param tokens   array of tokens that represent an input expression
+     * @return the result of the given experession as a Double 
+    */
     public static Double postfix(ArrayDeque<Object> tokens) {
         Double x1;
         Double x2;
@@ -56,9 +64,9 @@ public class Postfix {
             }else{
                 throw new IllegalArgumentException();
             }
-            //if stack has too many elements at the end
 
         };
+        //if stack has too many elements at the end
         if (stack.size()>1) {
             throw new IllegalArgumentException("Too many elements in stack");
         }else{
